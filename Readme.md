@@ -27,4 +27,4 @@ migrate`. It will run the the  migrations. If you decide to stop (press `CTRL+C`
 (`docker-compose up`) the app, you will see the warnings are gone. If you'd like to confirm that the 
 database is indeed migrated in Postgres, Run  `docker-compose exec postgres psql -U postgres`. It 
 will enter you into the Postgres terminal. From there you run `\c hello` to connect to the database 
-and then `\d` to see that the tables in the various initial migration are present. 
+and then `\d` to see that the various tables in the migration are present. 
