@@ -22,7 +22,7 @@ Postgres Integration
 
 You might note that it complains about migrations not being run. If you want to test the 
 capabilities of the Postgres connection, open another terminal window and navigate to the repo 
-directory if you're not already there. Then run  run `docker-compose exec web pipenv run ./manage.py 
+directory if you're not already there. Then run `docker-compose exec web pipenv run ./manage.py 
 migrate`. It will run the the  migrations. If you decide to stop (press `CTRL+C`) and then restart 
 (`docker-compose up`) the app, you will see the warnings are gone. If you'd like to confirm that the 
 database is indeed migrated in Postgres, Run  `docker-compose exec postgres psql -U postgres`. It 
