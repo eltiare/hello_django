@@ -8,7 +8,7 @@ RUN apk update && apk add postgresql-dev g++ make && pip install pipenv
 
 COPY Pipfile Pipfile.lock /code/
 
-RUN pipenv install
+RUN pipenv install --deploy
 
 COPY . /code/
 
